@@ -129,7 +129,7 @@ const initialState ={
                                     <form  onSubmit={this.handleSubmit} className="user">
                                         <div className="form-group">
                                         <input className="email" name="email" className="form-control form-control-user" id="exampleInputUsername" placeholder="Kullanıcı adı"onChange={this.handleChange}/>
-                                        <div><label className="border-bottom-primary">{this.state.emailError}</label></div>
+                                        <div> <label className="border-bottom-primary">{this.state.emailError}</label> </div>
                                         </div>
                                         <div className="form-group">
                                         <input type="password" name="password" className="form-control form-control-user" id="exampleInputPassword" placeholder="Parola" onChange={this.handleChange}/>
