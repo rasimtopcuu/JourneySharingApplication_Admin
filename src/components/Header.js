@@ -7,7 +7,7 @@ class Header extends Component {
                 <body id="page-top">
                     <div id="wrapper">
                         <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-                                <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+                                <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index">
                                 <div className="sidebar-brand-icon rotate-n-15">
                                     <i className="fas fa-taxi"></i>
                                 </div>
@@ -26,7 +26,7 @@ class Header extends Component {
                             <div className="sidebar-heading">
                             Interface
                             </div>
-                            <li claclassNamess="nav-item">
+                            <li className="nav-item">
                             <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                 <i className="fas fa-fw fa-cog"></i>
                                 <span>Kullanıcı İşlemleri</span>
@@ -34,26 +34,27 @@ class Header extends Component {
                             <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                                 <div className="bg-white py-2 collapse-inner rounded">
                                 <h6 className="collapse-header">Kullanıcı:</h6>
-                                <a className="collapse-item" href="users.php">Kullanıcılar</a>
-                                <a className="collapse-item" href="userAdd.php">Kullanıcı Ekle</a>
-                                <a className="collapse-item" href="users.php">Kullanıcı Banlama</a>
+                                <a className="collapse-item" href="users">Kullanıcılar</a>
+                                <a className="collapse-item" href="userAdd">Kullanıcı Ekle</a>
+                                <a className="collapse-item" href="user">Kullanıcı Banlama</a>
                                 </div>
                             </div>
                             </li>
-s                            <li className="nav-item">
-                            <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                                <i className="fas fa-fw fa-wrench"></i>
-                                <span>Admin</span>
-                            </a>
-                            <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                                <div className="bg-white py-2 collapse-inner rounded">
-                                <h6 className="collapse-header">Custom Utilities:</h6>
-                                <a className="collapse-item" href="utilities-color.php">Colors</a>
-                                <a className="collapse-item" href="utilities-border.php">Borders</a>
-                                <a className="collapse-item" href="utilities-animation.php">Animations</a>
-                                <a className="collapse-item" href="utilities-other.php">Other</a>
+                            {/* Admin NAV */}
+                            <li className="nav-item">
+                                <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+                                    <i className="fas fa-fw fa-wrench"></i>
+                                    <span>Admin</span>
+                                </a>
+                                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                                    <div className="bg-white py-2 collapse-inner rounded">
+                                    <h6 className="collapse-header">Custom Utilities:</h6>
+                                    <a className="collapse-item" href="utilities-color.php">Colors</a>
+                                    <a className="collapse-item" href="utilities-border.php">Borders</a>
+                                    <a className="collapse-item" href="utilities-animation.php">Animations</a>
+                                    <a className="collapse-item" href="utilities-other.php">Other</a>
+                                    </div>
                                 </div>
-                            </div>
                             </li>
 
                             
@@ -248,9 +249,9 @@ s                            <li className="nav-item">
                                                 Activity Log
                                             </a>
                                             <div className="dropdown-divider"></div>
-                                            <a className="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                            <a className="dropdown-item" href="Logout" data-toggle="modal" data-target="#logoutModal">
                                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                                Logout
+                                                Çıkış Yap
                                             </a>
                                             </div>
                                         </li>

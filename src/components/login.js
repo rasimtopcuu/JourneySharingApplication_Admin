@@ -125,7 +125,6 @@ const initialState ={
                                         <i className="fas fa-taxi"></i>
                                         </div>
                                         <h1 className="h4 text-gray-900 mb-4">JSA Admin Paneli</h1>
-
                                     </div>
                                     <form  onSubmit={this.handleSubmit} className="user">
                                         <div className="form-group">
@@ -153,11 +152,11 @@ const initialState ={
                             </div>
                             </div>
 
-                        </div>
+                         </div>
 
                         </div>
                     </div>
-                    </body>
+                </body>
             </div>
         );
     }

@@ -7,10 +7,7 @@ class index extends Component {
         return (
             <div className="App">
                 <Header/>
-                <Footer/>
-                
-            
-      ,
+                <Footer/>                  
             </div>
         );
     }

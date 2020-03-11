@@ -31,7 +31,7 @@ class Footer extends Component {
                         <div class="modal-body">Oturum kapanacak. Güvenli şekilde çıkış yapmak ister misin?</div>
                         <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Vazgeç</button>
-                        <a class="btn btn-primary" href="login.php">Çıkış Yap</a>
+                        <a class="btn btn-primary" href="Logout">Çıkış Yap</a>
                         </div>
                     </div>
                     </div>
