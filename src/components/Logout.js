@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import {BrowserRouter as Router,Link,Redirect} from "react-router-dom";
 
 export default class Logout extends Component {
-    constructor(props){
+    constructor(props)
+    {
         super(props)
         localStorage.removeItem('jwt');
     }
-    render() {
-        return (
+    render(){
+        return(
             <div>
                 <Redirect to="/login"/>
             </div>

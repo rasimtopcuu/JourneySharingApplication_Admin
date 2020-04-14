@@ -35,7 +35,7 @@ class Header extends Component {
                                 <div className="bg-white py-2 collapse-inner rounded">
                                 <h6 className="collapse-header">Kullanıcı:</h6>
                                 <a className="collapse-item" href="users">Kullanıcılar</a>
-                                <a className="collapse-item" href="userAdd">Kullanıcı Ekle</a>
+                                <a className="collapse-item" href="userSave">Kullanıcı Ekle</a>
                                 <a className="collapse-item" href="user">Kullanıcı Banlama</a>
                                 </div>
                             </div>
@@ -46,6 +46,8 @@ class Header extends Component {
                                     <i className="fas fa-fw fa-wrench"></i>
                                     <span>Admin</span>
                                 </a>
+
+                                {/*
                                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                                     <div className="bg-white py-2 collapse-inner rounded">
                                     <h6 className="collapse-header">Custom Utilities:</h6>
@@ -55,35 +57,22 @@ class Header extends Component {
                                     <a className="collapse-item" href="utilities-other.php">Other</a>
                                     </div>
                                 </div>
+                            */}
+                                                                                                                                    
                             </li>
-
-                            
                             <hr className="sidebar-divider"/>
-
-                            
                             <div className="sidebar-heading">
                             Addons
                             </div>
-
-                            
-
-                        
                             <li className="nav-item">
                             <a className="nav-link" href="charts.php">
                                 <i className="fas fa-fw fa-chart-area"></i>
                                 <span>Charts</span></a>
                             </li>
-
-                            
-
-                            
                             <hr className="sidebar-divider d-none d-md-block" />
-
-                            
                             <div className="text-center d-none d-md-inline">
                             <button className="rounded-circle border-0" id="sidebarToggle"></button>
                             </div>
-
                         </ul>
                         <div id="content-wrapper" className="d-flex flex-column">
                             <div id="content">
@@ -112,7 +101,7 @@ class Header extends Component {
                                             <div className="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                                             <form className="form-inline mr-auto w-100 navbar-search">
                                                 <div className="input-group">
-                                                <input type="text" className="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2"/>
+                                                <input type="text" className="form-control bg-light border-0 small" placeholder="Arama yapınız..." aria-label="Search" aria-describedby="basic-addon2"/>
                                                 <div className="input-group-append">
                                                     <button className="btn btn-primary" type="button">
                                                     <i className="fas fa-search fa-sm"></i>
@@ -133,7 +122,7 @@ class Header extends Component {
 
                                             <div className="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                                             <h6 className="dropdown-header">
-                                                Alerts Center
+                                                Duyurular
                                             </h6>
                                             <a className="dropdown-item d-flex align-items-center" href="#">
                                                 <div className="mr-3">
@@ -182,7 +171,7 @@ class Header extends Component {
 
                                             <div className="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
                                             <h6 className="dropdown-header">
-                                                Message Center
+                                                Mesajlar
                                             </h6>
                                             <a className="dropdown-item d-flex align-items-center" href="#">
                                                 <div className="dropdown-list-image mr-3">
@@ -224,7 +213,7 @@ class Header extends Component {
                                                 <div className="small text-gray-500">Chicken the Dog · 2w</div>
                                                 </div>
                                             </a>
-                                            <a className="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                                            <a className="dropdown-item text-center small text-gray-500" href="#">Daha fazlasını gör.</a>
                                             </div>
                                         </li>
 
@@ -238,11 +227,11 @@ class Header extends Component {
                                             <div className="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                             <a className="dropdown-item" href="#">
                                                 <i className="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                                Profile
+                                                Profil
                                             </a>
                                             <a className="dropdown-item" href="#">
                                                 <i className="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                                Settings
+                                                Ayarlar
                                             </a>
                                             <a className="dropdown-item" href="#">
                                                 <i className="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -257,9 +246,16 @@ class Header extends Component {
                                         </li>
                                 </ul>
                         </nav>
+                               
+                               
+                               {/*contentpage*/}
+                                
                         </div>
+
                         </div>
+                        
                      </div>
+                     
                 </body>
             </div>
         );

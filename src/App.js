@@ -6,6 +6,7 @@ import Header from "./components/Header"
 import index from "./components/index"
 import Footer from "./components/Footer"
 import Logout from "./components/Logout"
+import userSave from "./components/userSave"
 import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route exact path = "/index" component ={index}   />
       <Route exact path = "/footer" component ={Footer}   />
       <Route exact path = "/Logout" component ={Logout}   />
+      <Route exact path = "/userSave" component ={userSave}   />
 
     </Switch>
     

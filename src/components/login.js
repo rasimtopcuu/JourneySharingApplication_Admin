@@ -3,7 +3,8 @@ import {BrowserRouter as Router,Route,Switch,Redirect} from "react-router-dom";
 
 const initialState ={
 }
- class login extends Component {
+ class login extends Component 
+ {
    
      constructor(props){
         const token = localStorage.getItem('jwt');
@@ -48,18 +49,22 @@ const initialState ={
          //let password error
          const {password,email,loggedIn}=this.state;
        
-         if(!password.match(/^[#\w@_-]{6,20}$/) ){
-             passwordError ="unfortunately you entered invalid password";
+         if(!password.match(/^[#\w@_-]{6,20}$/) )
+         {
+            passwordError ="Unfortunately you entered invalid password";
          }
         
-        if(!email.match(/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/)){
-             emailError = 'Please enter a valid email address example@ypu.com';
+        if(!email.match(/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/))
+        {
+            emailError = 'Please enter a valid email address ex: info@gmail.com';
         }
-        if(loggedIn && !emailError && !passwordError){
-            loginError="No such user was found in our system, please check your password and e-mail again.";
+        if(loggedIn && !emailError && !passwordError)
+        {
+            loginError='No such user was found in our system, please check your password and e-mail again.';
             this.setState({loginError})
-            }
-        if(emailError){
+        }
+        if(emailError)
+        {
          this.setState({emailError});
          return false;
         }
@@ -75,14 +80,15 @@ const initialState ={
             //clear form
             this.setState(initialState);
             const {loggedIn,loginError}=this.state;
-             fetch('https://cors-anywhere.herokuapp.com/https://journey-sharing-application.herokuapp.com/token',{
+             fetch('http://25.109.92.209:8081/token/panel',{
                 method: 'POST',
                 body: JSON.stringify({
                 emailAddress: this.state.email,
                 password:this.state.password,
                 }),
                 headers: {
-                "Content-type": "application/json; charset=UTF-8"
+                "Content-type": "application/json; charset=UTF-8",
+                "Accept-Language":"en"
                 }
             })
             .then(response => response.json())
@@ -95,7 +101,7 @@ const initialState ={
                     this.setState({loggedIn:true})
                     }
                     if(!loggedIn ){
-                        loginError="No such user was found in our system, please check your password and e-mail again.";
+                        loginError='No such user was found in our system, please check your password and e-mail again.';
                         this.setState({loginError})
                         }
             
@@ -104,60 +110,65 @@ const initialState ={
     }
     render() {
         if(this.state.loggedIn){
-            return   <Redirect to="/header"/>
+            return   <Redirect to="/index"/>
        }
         return (
             <div>
-                <body className="bg-gradient-primary">
-                    <div className="container">
-                        <div className="row justify-content-center">
+            <body className="bg-gradient-primary">
+                <div className="container">
+                    <div className="row justify-content-center">
                         <div className="col-xl-10 col-lg-12 col-md-9">
                             <div className="card o-hidden border-0 shadow-lg my-5">
-                            <div className="card-body p-0">
-                               
-                                <div className="row">
+                                <div className="card-body p-0">
+                                    <div className="row">
+                                        <div className="col-lg-12">
+                                            <div className="p-5">
 
-                                <div className="col-lg-12">
-                                    <div className="p-5">
+                                                <div className="text-center">
+                                                    <div className="sidebar-brand-icon rotate-n-15">
+                                                        <i className="fas fa-taxi"></i>
+                                                    </div>
+                                                    <h1 className="h4 text-gray-900 mb-4">JSA Admin Paneli</h1>
+                                                </div>
+                                                
+                                                <form  onSubmit={this.handleSubmit} className="user">
+                                                    
+                                                    <div className="form-group">
+                                                        <input className="email" name="email" className="form-control form-control-user" id="exampleInputUsername" placeholder="Kullanıcı adı"onChange={this.handleChange}/>
+                                                        <div>
+                                                            <label className="border-bottom-primary">{this.state.emailError}</label>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div className="form-group">
+                                                        <input type="password" name="password" className="form-control form-control-user" id="exampleInputPassword" placeholder="Parola" onChange={this.handleChange}/>
+                                                        <div>
+                                                            <label className="border-bottom-primary">{this.state.passwordError}</label>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div className="form-group">
+                                                        <div className="custom-control custom-checkbox small">
+                                                            <input type="checkbox" className="custom-control-input" id="customCheck"/>
+                                                            <label className="custom-control-label" htmlFor="customCheck">Beni Hatırla</label>
+                                                        </div>
+                                                    </div>
 
-                                    <div className="text-center">
-                                        <div className="sidebar-brand-icon rotate-n-15">
-                                        <i className="fas fa-taxi"></i>
+                                                    <button type="submit" className="btn btn-primary btn-user btn-block"> Giriş Yap </button>
+
+                                                    <hr/>
+                                                </form> {/*form end*/}
+                                            </div>
                                         </div>
-                                        <h1 className="h4 text-gray-900 mb-4">JSA Admin Paneli</h1>
-                                    </div>
-                                    <form  onSubmit={this.handleSubmit} className="user">
-                                        <div className="form-group">
-                                        <input className="email" name="email" className="form-control form-control-user" id="exampleInputUsername" placeholder="Kullanıcı adı"onChange={this.handleChange}/>
-                                        <div> <label className="border-bottom-primary">{this.state.emailError}</label> </div>
-                                        </div>
-                                        <div className="form-group">
-                                        <input type="password" name="password" className="form-control form-control-user" id="exampleInputPassword" placeholder="Parola" onChange={this.handleChange}/>
-                                        <div><label className="border-bottom-primary">{this.state.passwordError}</label></div>
-                                        </div>
-                                        <div className="form-group">
-                                        <div className="custom-control custom-checkbox small">
-                                            <input type="checkbox" className="custom-control-input" id="customCheck"/>
-                                            <label className="custom-control-label" htmlFor="customCheck">Beni Hatırla</label>
-                                        </div>
-                                        </div>
-                                        <button type="submit" className="btn btn-primary btn-user btn-block">
-                                        Giriş Yap
-                                        </button>
-                                        <hr/>
-                                    </form>
                                     </div>
                                 </div>
-                                </div>
                             </div>
-                            </div>
-
-                         </div>
-
                         </div>
                     </div>
-                </body>
-            </div>
+                </div>
+            </body>
+        </div>
+            
         );
     }
 }
