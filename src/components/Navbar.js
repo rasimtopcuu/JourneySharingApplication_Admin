@@ -4,14 +4,7 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-              
-              
-                        <ul className="navbar-nav bg-gradient-primary sidebar-dark accordion" id="accordionSidebar">
-                            
-
-
-
-                            
+               <ul className="navbar-nav bg-gradient-primary sidebar-dark accordion" id="accordionSidebar"> 
                                 <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index">
                                 <div className="sidebar-brand-icon rotate-n-15">
                                     <i className="fas fa-taxi"></i>
@@ -65,13 +58,28 @@ class Navbar extends Component {
 
                             <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                                 <div className="bg-white py-2 collapse-inner rounded">
-                                <h6 className="collapse-header">Kullanıcı:</h6>
-                                <a className="collapse-item" href="User">    Kullanıcılar      </a>
-                                <a className="collapse-item" href="UserBan"> Hesabı askıya alma </a>
+                                <h6 className="collapse-header">Kullanıcı İşlemleri:</h6>
+                                <a className="collapse-item" href="User">Kullanıcı Listesi</a>
+                                <a className="collapse-item" href="UserBan">Hesabı askıya alma</a>
                                 </div>
                             </div>
                             </li>
                             
+                            <li className="nav-item">
+                            <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                <i className="fas fa-fw fa-cog"></i>
+                                <span>Sürücü İşlemleri</span>
+                            </a>
+
+                            <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+                                <div className="bg-white py-2 collapse-inner rounded">
+                                <h6 className="collapse-header">Sürücü İşlemleri:</h6>
+                                <a className="collapse-item" href="Driver">    Sürücü Listesi      </a>
+                                <a className="collapse-item" href="DriverBan"> Hesabı askıya alma </a>
+                                </div>
+                            </div>
+                            </li>
+
                             {/* Admin NAV */}
                             <li className="nav-item">
                                 <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
@@ -102,18 +110,7 @@ class Navbar extends Component {
                                 <span>Charts</span></a>
                             </li>
                             <hr className="sidebar-divider d-none d-md-block" />
-                            
-
-                            
-
-
-                        </ul>
-                        
-
-
-                  
-
-                                    
+                        </ul>                     
             </div>
 
         );

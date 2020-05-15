@@ -146,8 +146,6 @@ class User extends Component {
                         <td>321</td>
                       </tr>
 
-
-
                       
                     </tbody>
                   </table>

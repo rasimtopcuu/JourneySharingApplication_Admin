@@ -10,30 +10,35 @@ import userSave from "./components/userSave"
 import Navbar from "./components/Navbar"
 import User from "./components/User"
 import UserBan from "./components/UserBan"
+import Driver from "./components/Driver"
+import DriverBan from "./components/DriverBan"
+
+
 
 import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
 
 function App() {
   return (
     <Router>
-    <div className="App">
-    <Switch>
+      <div className="App">
+        <Switch>
 
-      <Route exact path = "/login" component ={login}         />
-      <Route exact path = "/header" component ={Header}       />
-      <Route exact path = "/index" component ={index}         />
-      <Route exact path = "/footer" component ={Footer}       />
-      <Route exact path = "/Logout" component ={Logout}       />
-      <Route exact path = "/Navbar" component ={Navbar}       />
-      <Route exact path = "/User" component ={User}   />
-      <Route exact path = "/UserBan" component ={UserBan}   />
+          <Route exact path = "/login" component ={login}/>
+          <Route exact path = "/header" component ={Header}/>
+          <Route exact path = "/index" component ={index}/>
+          <Route exact path = "/footer" component ={Footer}/>
+          <Route exact path = "/Logout" component ={Logout}/>
+          <Route exact path = "/Navbar" component ={Navbar}/>
+            {/*User */}
+          <Route exact path = "/User" component ={User}/>
+          <Route exact path = "/UserBan" component ={UserBan}/>
+            {/*Driver */}
+          <Route exact path = "/Driver" component ={Driver}/>
+          <Route exact path = "/DriverBan" component ={DriverBan}/>
       
-
-    </Switch>
-    
-    
-    </div>
-</Router>
+        </Switch>    
+      </div>
+    </Router>
   );
 }
 
