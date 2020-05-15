@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router,Route,Switch,Redirect} from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
+import Navbar from "./Navbar";
+import User from "./User";
 
 class index extends Component {
     
@@ -20,15 +22,20 @@ class index extends Component {
     render() 
     {
         
-        if(this.state.loggedIn === false){
+        {/* 
+        if(this.state.loggedIn === false)
+        {
             return   <Redirect to="/login"/>
-       }
-    
+        }
+        
+        */}
+        
         return (
             <div className="App">
-                <Header/>
-                    <h1>Welcome</h1>
-                <Footer/>                  
+           
+                <Navbar/>
+                
+                <h1>Hoşgeldiniz.</h1>             
             </div>
         );
     }
