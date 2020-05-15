@@ -3,7 +3,7 @@ import {BrowserRouter as Router,Route,Switch,Redirect} from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 import Navbar from "./Navbar";
-import User from "./User";
+
 
 class index extends Component {
     

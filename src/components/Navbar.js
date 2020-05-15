@@ -5,8 +5,8 @@ class Navbar extends Component {
         return (
             <div>
               
-                <div id="wrapper">
-                        <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+              
+                        <ul className="navbar-nav bg-gradient-primary sidebar-dark accordion" id="accordionSidebar">
                             
 
 
@@ -45,7 +45,7 @@ class Navbar extends Component {
                         </div>
 
                             <li className="nav-item active">
-                            <a className="nav-link" href="istatistik.php">
+                            <a className="nav-link" href="index">
                                 <i class="fas fa-fw fa-tachometer-alt"></i>
                                 <span>Dashboard</span>
                             </a>
@@ -66,9 +66,8 @@ class Navbar extends Component {
                             <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                                 <div className="bg-white py-2 collapse-inner rounded">
                                 <h6 className="collapse-header">Kullanıcı:</h6>
-                                <a className="collapse-item" href="User">Kullanıcılar</a>
-                                <a className="collapse-item" href="userSave">Kullanıcı Ekle</a>
-                                <a className="collapse-item" href="user">Kullanıcı Banlama</a>
+                                <a className="collapse-item" href="User">    Kullanıcılar      </a>
+                                <a className="collapse-item" href="UserBan"> Hesabı askıya alma </a>
                                 </div>
                             </div>
                             </li>
@@ -110,10 +109,9 @@ class Navbar extends Component {
 
                         </ul>
                         
-<div className="content">sad</div>
 
 
-                     </div>
+                  
 
                                     
             </div>

@@ -9,6 +9,7 @@ import Logout from "./components/Logout"
 import userSave from "./components/userSave"
 import Navbar from "./components/Navbar"
 import User from "./components/User"
+import UserBan from "./components/UserBan"
 
 import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
 
@@ -25,7 +26,8 @@ function App() {
       <Route exact path = "/Logout" component ={Logout}       />
       <Route exact path = "/Navbar" component ={Navbar}       />
       <Route exact path = "/User" component ={User}   />
-      <Route exact path = "/userSave" component ={userSave}   />
+      <Route exact path = "/UserBan" component ={UserBan}   />
+      
 
     </Switch>
     
