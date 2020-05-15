@@ -12,14 +12,9 @@ class UserBan extends Component {
                     <label>
                         ID: <input className="form-control" type="text"/>
                     </label>
-                    
                 </form>
                 <br></br>
-                
-
-
                 <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Hesabı askıya al.</button>
-
                 <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div class="modal-content">
@@ -29,25 +24,13 @@ class UserBan extends Component {
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-
                     <div className="modal-body">
-                    
-                    
-                  
-                    
-                        
-                       
                                 <div class="form-check form-check-inline">
                                     <input type="checkbox" class="form-check-input" id="materialInline1" />
                                     <label class="form-check-label" for="materialInline1">Süresiz</label>
                                 </div>
-
                                 <input className="form-control" type="datetime-local" value ="2020-08-19T13:45:00" id="example-datetime-local-input"></input>
-                                
-
-                    
                     </div>
-                    
                     <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" data-dismiss="modal">Vazgeç</button>
                         <button type="button" className="btn btn-primary">Hesabı askıya al.</button>
