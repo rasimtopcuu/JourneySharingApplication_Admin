@@ -59,12 +59,12 @@ class Navbar extends Component {
                             <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                                 <div className="bg-white py-2 collapse-inner rounded">
                                 <h6 className="collapse-header">Kullanıcı İşlemleri:</h6>
-                                <a className="collapse-item" href="User">Kullanıcı Listesi</a>
+                                <a className="collapse-item" href="User">Kullanıcı Listesi </a>
                                 <a className="collapse-item" href="UserBan">Hesabı askıya alma</a>
                                 </div>
                             </div>
                             </li>
-                            
+                             {/* Driver NAV */}
                             <li className="nav-item">
                             <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                 <i className="fas fa-fw fa-cog"></i>
@@ -79,12 +79,28 @@ class Navbar extends Component {
                                 </div>
                             </div>
                             </li>
+                             {/* Journeys NAV */}
+                            <li className="nav-item">
+                            <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                <i className="fas fa-fw fa-cog"></i>
+                                <span>Yolculuk İşlemleri</span>
+                            </a>
+
+                            <div id="collapseFour" className="collapse" aria-labelledby="headingFour" data-parent="#accordionSidebar">
+                                <div className="bg-white py-2 collapse-inner rounded">
+                                <h6 className="collapse-header">Yolculuk İşlemleri:</h6>
+                                <a className="collapse-item" href="Journeys">Yolculuk Listesi</a>
+                                
+                                </div>
+                            </div>
+                            </li>
+
 
                             {/* Admin NAV */}
                             <li className="nav-item">
-                                <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+                                <a className="nav-link collapsed" href="Journeys" data-toggle="collapse" data-target="#Journeys" aria-expanded="true" aria-controls="collapseUtilities">
                                     <i className="fas fa-fw fa-wrench"></i>
-                                    <span>Admin</span>
+                                    <span>Yolculuklar</span>
                                 </a>
 
                                 {/*

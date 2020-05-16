@@ -12,7 +12,8 @@ import User from "./components/User"
 import UserBan from "./components/UserBan"
 import Driver from "./components/Driver"
 import DriverBan from "./components/DriverBan"
-
+import Journeys from "./components/Journeys"
+import NotFound from "./components/NotFound"
 
 
 import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
@@ -35,6 +36,8 @@ function App() {
             {/*Driver */}
           <Route exact path = "/Driver" component ={Driver}/>
           <Route exact path = "/DriverBan" component ={DriverBan}/>
+          <Route exact path = "/Journeys" component ={Journeys}/>
+          <Route exact path="*" component={NotFound} />
       
         </Switch>    
       </div>
