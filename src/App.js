@@ -14,6 +14,7 @@ import Driver from "./components/Driver"
 import DriverBan from "./components/DriverBan"
 import Journeys from "./components/Journeys"
 import Payments from "./components/Payments"
+import PaymentList from "./components/PaymentList"
 import NotFound from "./components/NotFound"
 
 
@@ -39,7 +40,9 @@ function App() {
           <Route exact path = "/DriverBan" component ={DriverBan}/>
           <Route exact path = "/Journeys" component ={Journeys}/>
           <Route exact path = "/Payments" component ={Payments}/>
-          <Route exact path="*" component={NotFound} />
+          <Route exact path = "/PaymentList" component ={PaymentList}/>
+          <Route exact path = "*" component={NotFound} />
+
       
         </Switch>   
 

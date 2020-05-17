@@ -27,6 +27,7 @@ class Journeys extends Component {
                                     <table className="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
+                                                <th>Yolculuk ID</th>
                                                 <th>Şöför İsim Soyisim</th>
                                                 <th>Yolcu İsim Soyisim</th>
                                                 <th>Alış Noktası</th>
@@ -38,6 +39,7 @@ class Journeys extends Component {
                                         </thead>
                                         <tfoot>
                                             <tr>
+                                                <th>Yolculuk ID</th>
                                                 <th>Şöför İsim Soyisim</th>
                                                 <th>Yolcu İsim Soyisim</th>
                                                 <th>Alış Noktası</th>
@@ -49,6 +51,7 @@ class Journeys extends Component {
                                         </tfoot>
                                         <tbody>
                                             <tr>
+                                                <td>1412</td>
                                                 <td>Remzi Çakır</td>
                                                 <td>Ayşe Gülep</td>
                                                 <td>Beyoğlu, Reis sk.</td>
@@ -58,6 +61,7 @@ class Journeys extends Component {
                                                 <td className="bg-gradient-success text-white">Tamamlandı</td>
                                             </tr>
                                             <tr>
+                                            <td>1412</td>
                                                 <td>Remzi Çakır</td>
                                                 <td>Ayşe Gülep</td>
                                                 <td>Beyoğlu, Reis sk.</td>
@@ -67,6 +71,7 @@ class Journeys extends Component {
                                                 <td className="bg-gradient-success text-white">Tamamlandı</td>
                                             </tr>
                                             <tr>
+                                            <td>1412</td>
                                                 <td>Remzi Çakır</td>
                                                 <td>Ayşe Gülep</td>
                                                 <td>Beyoğlu, Reis sk.</td>
@@ -75,8 +80,8 @@ class Journeys extends Component {
                                                 <td>59 ₺</td>
                                                 <td className="bg-gradient-success text-white">Tamamlandı</td>
                                             </tr>
-
                                             <tr>
+                                            <td>1412</td>
                                                 <td>Remzi Çakır</td>
                                                 <td>Ayşe Gülep</td>
                                                 <td>Beyoğlu, Reis sk.</td>
