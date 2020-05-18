@@ -6,7 +6,6 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import index from "./components/index"
 import Logout from "./components/Logout"
-import userSave from "./components/userSave"
 import Navbar from "./components/Navbar"
 import User from "./components/User"
 import UserBan from "./components/UserBan"
@@ -28,8 +27,8 @@ function App() {
 
           <Route exact path = "/login" component ={login}/>
           <Route exact path = "/header" component ={Header}/>
-          <Route exact path = "/index" component ={index}/>
           <Route exact path = "/footer" component ={Footer}/>
+          <Route exact path = "/index" component ={index}/>
           <Route exact path = "/Logout" component ={Logout}/>
           <Route exact path = "/Navbar" component ={Navbar}/>
             {/*User */}

@@ -37,7 +37,7 @@ class Payments extends Component {
                   <td>1425</td>
                   <td>Remzi</td>
                   <td>Çakır</td>
-                  <td>4392 3233 9322 9324</td>
+                  <td>4392 **** **** 9324</td>
                   <td>Visa</td>
                   <td>746</td>
                   <td>09/22</td>
@@ -46,7 +46,7 @@ class Payments extends Component {
                   <td>1425</td>
                   <td>Remzi</td>
                   <td>Çakır</td>
-                  <td>4392 3233 9322 9324</td>
+                  <td>4392 **** **** 9324</td>
                   <td>Visa</td>
                   <td>746</td>
                   <td>09/22</td>
@@ -55,7 +55,7 @@ class Payments extends Component {
                   <td>1425</td>
                   <td>Remzi</td>
                   <td>Çakır</td>
-                  <td>4392 3233 9322 9324</td>
+                  <td>4392 **** **** 9324</td>
                   <td>Visa</td>
                   <td>746</td>
                   <td>09/22</td>
@@ -64,7 +64,7 @@ class Payments extends Component {
                   <td>1425</td>
                   <td>Remzi</td>
                   <td>Çakır</td>
-                  <td>4392 3233 9322 9324</td>
+                  <td>4392 **** **** 9324</td>
                   <td>Visa</td>
                   <td>746</td>
                   <td>09/22</td>
